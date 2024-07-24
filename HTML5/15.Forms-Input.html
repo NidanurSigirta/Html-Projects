@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms ve Input</title>
+</head>
+<body>
+
+     <!--HTML5 Input-->
+    <form style="font-size: 20px;">
+        <!-- Name <br>
+        <input type="text">  böyle de yazılabilir-->
+
+        <label for="name">Name</label> <br>  <!--Name'e tıklayınca kutu focuslansın diye label kullandık-->
+        <input type="text" id="name" name="name"> <br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email"> <br>
+
+        <label for="password">Password</label> <br>
+        <input type="password" id="password" name="password"> <br>
+
+        <label for="date">Date</label> <br>
+        <input type="date" id="date" name="date"> <br>
+
+        <!--radio buttonlar da sadece bir tane seçenek seçme zorunluluğu var.
+            O yüzden burada name alanlarımızın hepsinin aynı olması gerekiyor-->
+
+        Gender <br>
+        Male
+        <input type="radio" name="gender" value="male" checked >  <!--yanına checked yazarsak otomatik olarak male işaretlenir-->
+        Female
+        <input type="radio" name="gender" value="female">
+        Other
+        <input type="radio" name="gender" value="other"> <br>
+
+        <!--checkbox larda birden fazla seçim yapabiliriz-->
+
+        Hobbies <br>
+        Technology
+        <input type="checkbox" id="tech" name="tech">
+        Music
+        <input type="checkbox" id="music" name="music">
+        Art
+        <input type="checkbox" id="art" name="art"> <br>
+
+        Degree <br>
+        <select name="degree" id="degree">
+
+            <option value="bachelor">Lisans</option>
+            <option value="msc">Yüksek Lisans</option>
+            <option value="phd">Doktora</option>
+
+        </select>
+        <br>
+
+        <textarea name="message" id="message"  rows="10" cols="30 " placeholder="Your Message"></textarea><br> 
+         <!--satır ve sütun sayısı da veriliyor-->
+
+
+       <!-- <button type="reset">Sıfırla</button> -->
+       <input type="reset" value="Reset"> 
+  
+       <!-- <button type="submit">Gönder</button> -->
+       <input type="submit" value="Submit">
+       
+
+
+    </form>
+    
+</body>
+</html>
